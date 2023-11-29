@@ -68,16 +68,16 @@ def collector(world):
         pyautogui.click(location_loot_button)
         pyautogui.click(location_open_now_button)
     elif world == 'Earth':
-        location_2stack_coin = pyautogui.locateOnScreen('Earth/Earth_2stack_coin.png')
-        location_4stack_coin = pyautogui.locateOnScreen('Earth/Earth_4stack_coin.png')
-        location_6stack_coin = pyautogui.locateOnScreen('Earth/Earth_6stack_coin.png')
-        location_chest = pyautogui.locateOnScreen('Earth/Earth_crate.png')
+        location_2stack_coin = pyautogui.locateOnScreen('Earth/earth_2stack_coin.png')
+        location_4stack_coin = pyautogui.locateOnScreen('Earth/earth_4stack_coin.png')
+        location_6stack_coin = pyautogui.locateOnScreen('Earth/earth_6stack_coin.png')
+        location_chest = pyautogui.locateOnScreen('Earth/earth_bag.png')
         #location_close_button = pyautogui.locateOnScreen('Earth/Earth_close_button.png')
-        location_equip_button = pyautogui.locateOnScreen('Earth/Earth_equip_button.png')
-        location_fortune_box = pyautogui.locateOnScreen('Earth/Earth_fortune_box.png')
-        location_grab_button = pyautogui.locateOnScreen('Earth/Earth_grab_button.png')
-        location_loot_button = pyautogui.locateOnScreen('Earth/Earth_loot_button.png')
-        location_open_now_button = pyautogui.locateOnScreen('Earth/Earth_open_now_button.png')
+        location_equip_button = pyautogui.locateOnScreen('Earth/earth_equip_button.png')
+        location_fortune_box = pyautogui.locateOnScreen('Earth/earth_fortune_box.png')
+        location_grab_button = pyautogui.locateOnScreen('Earth/earth_grab_button.png')
+        location_loot_button = pyautogui.locateOnScreen('Earth/earth_loot_button.png')
+        location_open_now_button = pyautogui.locateOnScreen('Earth/earth_open_now_button.png')
 
         pyautogui.click(location_2stack_coin)
         pyautogui.click(location_4stack_coin)
@@ -89,3 +89,6 @@ def collector(world):
         pyautogui.click(location_grab_button)
         pyautogui.click(location_loot_button)
         pyautogui.click(location_open_now_button)
+
+clicker()
+collector
