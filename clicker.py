@@ -2,11 +2,35 @@ import pyautogui
 import time
 #pyautogui.mouseInfo()
 
-time.sleep(5)
+
 def clicker():
     while True:
         pyautogui.leftClick(x = 385, y = 503)
 
+def world():
+    x = 186
+    y = 403
 
+    color = pyautogui.pixel(x,y)
 
-clicker()
+    if color == (85,18,11):
+        world = 'Mars'
+    elif color == (217,229,235):
+        world = 'Moon'
+    elif color == (235,221,175):
+        world = 'Earth'
+    
+    return world
+
+def collector(world):
+    if world == 'Mars':
+        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png')
+        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png')
+        location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png')
+        location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png')
+        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png')
+        location_equip_button = pyautogui.locateOnScreen('Mars/mars_equip_button.png')
+        location_fortune_box = pyautogui.locateOnScreen('Mars/mars_fortune_box.png')
+        location_grab_button = pyautogui.locateOnScreen('Mars/mars_grab_button.png')
+        location_loot_button = pyautogui.locateOnScreen('Mars/mars_loot_button.png')
+        location_open_now_button = pyautogui.locateOnScreen('Mars/mars_open_now_button.png')
