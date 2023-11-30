@@ -124,10 +124,10 @@ def collector(world_name):
         if location_open_now_button is not None:
             pyautogui.click(location_open_now_button)
 
-def main():
+
+
+
+if __name__ == '__main__':
     clicker()
     world_name = world()
     collector(world_name)
-
-if __name__ == '__main__':
-    main()
