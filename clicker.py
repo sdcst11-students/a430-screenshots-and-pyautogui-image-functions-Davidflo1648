@@ -126,8 +126,6 @@ def collector(world_name):
 
 
 
-
-if __name__ == '__main__':
-    clicker()
-    world_name = world()
-    collector(world_name)
+world_name = world()
+collector(world_name)
+clicker()
