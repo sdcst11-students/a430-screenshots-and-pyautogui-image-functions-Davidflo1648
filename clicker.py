@@ -25,7 +25,7 @@ def world():
     
     return world_name
 
-def collector(world_name):
+#def collector(world_name):
     if world_name == 'Mars':
         location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png')
         location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png')
@@ -40,23 +40,23 @@ def collector(world_name):
 
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
-        if location_4stack_coin is not None:
+        elif location_4stack_coin is not None:
             pyautogui.click(location_4stack_coin)
-        if location_6stack_coin is not None:
+        elif location_6stack_coin is not None:
             pyautogui.click(location_6stack_coin)
-        if location_chest is not None:
+        elif location_chest is not None:
             pyautogui.click(location_chest)
-        if location_close_button is not None:
+        elif location_close_button is not None:
             pyautogui.click(location_close_button)
-        if location_equip_button is not None:
+        elif location_equip_button is not None:
             pyautogui.click(location_equip_button)
-        if location_fortune_box is not None:
+        elif location_fortune_box is not None:
             pyautogui.click(location_fortune_box)
-        if location_grab_button is not None:
+        elif location_grab_button is not None:
             pyautogui.click(location_grab_button)
-        if location_loot_button is not None:
+        elif location_loot_button is not None:
             pyautogui.click(location_loot_button)
-        if location_open_now_button is not None:
+        elif location_open_now_button is not None:
             pyautogui.click(location_open_now_button)
 
     elif world_name == 'Moon':
@@ -73,23 +73,23 @@ def collector(world_name):
 
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
-        if location_4stack_coin is not None:
+        elif location_4stack_coin is not None:
             pyautogui.click(location_4stack_coin)
-        if location_6stack_coin is not None:
+        elif location_6stack_coin is not None:
             pyautogui.click(location_6stack_coin)
-        if location_chest is not None:
+        elif location_chest is not None:
             pyautogui.click(location_chest)
         #if location_close_button is not None:
             #pyautogui.click(location_close_button)
-        if location_equip_button is not None:
+        elif location_equip_button is not None:
             pyautogui.click(location_equip_button)
-        if location_fortune_box is not None:
+        elif location_fortune_box is not None:
             pyautogui.click(location_fortune_box)
-        if location_grab_button is not None:
+        elif location_grab_button is not None:
             pyautogui.click(location_grab_button)
-        if location_loot_button is not None:
+        elif location_loot_button is not None:
             pyautogui.click(location_loot_button)
-        if location_open_now_button is not None:
+        elif location_open_now_button is not None:
             pyautogui.click(location_open_now_button)
 
     elif world_name == 'Earth':
@@ -106,27 +106,31 @@ def collector(world_name):
 
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
-        if location_4stack_coin is not None:
+        elif location_4stack_coin is not None:
             pyautogui.click(location_4stack_coin)
-        if location_6stack_coin is not None:
+        elif location_6stack_coin is not None:
             pyautogui.click(location_6stack_coin)
-        if location_chest is not None:
+        elif location_chest is not None:
             pyautogui.click(location_chest)
         #if location_close_button is not None:
             #pyautogui.click(location_close_button)
-        if location_equip_button is not None:
+        elif location_equip_button is not None:
             pyautogui.click(location_equip_button)
-        if location_fortune_box is not None:
+        elif location_fortune_box is not None:
             pyautogui.click(location_fortune_box)
-        if location_grab_button is not None:
+        elif location_grab_button is not None:
             pyautogui.click(location_grab_button)
-        if location_loot_button is not None:
+        elif location_loot_button is not None:
             pyautogui.click(location_loot_button)
-        if location_open_now_button is not None:
+        elif location_open_now_button is not None:
             pyautogui.click(location_open_now_button)
 
+def mars_upgrades():
+    if pyautogui.pixelMatchesColor(212,199,199):
+        pyautogui.leftClick(847,631 or 804,483 or 805,327 or 1044,338 or 1030,479)
 
-
-world_name = world()
-collector(world_name)
+#world_name = world()
+#collector(world_name)
+mars_upgrades()
 clicker()
+mars_upgrades()
