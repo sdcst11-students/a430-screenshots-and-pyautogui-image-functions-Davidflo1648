@@ -4,7 +4,7 @@ import time
 
 
 def clicker():
-    time.sleep(2)
+    time.sleep(1)
     for i in range(20):
         pyautogui.leftClick(x = 385, y = 503)
 
@@ -27,16 +27,16 @@ def world():
 
 def collector(world_name):
     if world_name == 'Mars':
-        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png',confidence=0.8)
-        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png',confidence=0.8)
-        location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png',confidence=0.8)
-        location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png',confidence=0.8)
-        location_close_button = pyautogui.locateOnScreen('Mars/mars_close_button.png',confidence=0.8)
-        location_equip_button = pyautogui.locateOnScreen('Mars/mars_equip_button.png',confidence=0.8)
-        location_fortune_box = pyautogui.locateOnScreen('Mars/mars_fortune_box.png',confidence=0.8)
-        location_grab_button = pyautogui.locateOnScreen('Mars/mars_grab_button.png',confidence=0.8)
-        location_loot_button = pyautogui.locateOnScreen('Mars/mars_loot_button.png',confidence=0.8)
-        location_open_now_button = pyautogui.locateOnScreen('Mars/mars_open_now_button.png',confidence=0.8)
+        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png',confidence=0.2)
+        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png',confidence=0.2)
+        location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png',confidence=0.2)
+        location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png',confidence=0.2)
+        location_close_button = pyautogui.locateOnScreen('Mars/mars_close_button.png',confidence=0.2)
+        location_equip_button = pyautogui.locateOnScreen('Mars/mars_equip_button.png',confidence=0.2)
+        location_fortune_box = pyautogui.locateOnScreen('Mars/mars_fortune_box.png',confidence=0.2)
+        location_grab_button = pyautogui.locateOnScreen('Mars/mars_grab_button.png',confidence=0.2)
+        location_loot_button = pyautogui.locateOnScreen('Mars/mars_loot_button.png',confidence=0.2)
+        location_open_now_button = pyautogui.locateOnScreen('Mars/mars_open_now_button.png',confidence=0.2)
         print(location_2stack_coin)
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
@@ -60,16 +60,16 @@ def collector(world_name):
             pyautogui.click(location_open_now_button)
 
     elif world_name == 'Moon':
-        location_2stack_coin = pyautogui.locateOnScreen('Moon/moon_2stack_coin.png')
-        location_4stack_coin = pyautogui.locateOnScreen('Moon/moon_4stack_coin.png')
-        location_6stack_coin = pyautogui.locateOnScreen('Moon/moon_6stack_coin.png')
-        location_chest = pyautogui.locateOnScreen('Moon/moon_crate.png')
-        #location_close_button = pyautogui.locateOnScreen('Moon/Moon_close_button.png')
-        location_equip_button = pyautogui.locateOnScreen('Moon/moon_equip_button.png')
-        location_fortune_box = pyautogui.locateOnScreen('Moon/moon_fortune_box.png')
-        location_grab_button = pyautogui.locateOnScreen('Moon/moon_grab_button.png')
-        location_loot_button = pyautogui.locateOnScreen('Moon/moon_loot_button.png')
-        location_open_now_button = pyautogui.locateOnScreen('Moon/moon_open_now_button.png')
+        location_2stack_coin = pyautogui.locateOnScreen('Moon/moon_2stack_coin.png',confidence=0.2)
+        location_4stack_coin = pyautogui.locateOnScreen('Moon/moon_4stack_coin.png',confidence=0.2)
+        location_6stack_coin = pyautogui.locateOnScreen('Moon/moon_6stack_coin.png',confidence=0.2)
+        location_chest = pyautogui.locateOnScreen('Moon/moon_crate.png',confidence=0.2)
+        #location_close_button = pyautogui.locateOnScreen('Moon/Moon_close_button.png',confidence=0.2)
+        location_equip_button = pyautogui.locateOnScreen('Moon/moon_equip_button.png',confidence=0.2)
+        location_fortune_box = pyautogui.locateOnScreen('Moon/moon_fortune_box.png',confidence=0.2)
+        location_grab_button = pyautogui.locateOnScreen('Moon/moon_grab_button.png',confidence=0.2)
+        location_loot_button = pyautogui.locateOnScreen('Moon/moon_loot_button.png',confidence=0.2)
+        location_open_now_button = pyautogui.locateOnScreen('Moon/moon_open_now_button.png',confidence=0.2)
 
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
@@ -93,16 +93,16 @@ def collector(world_name):
             pyautogui.click(location_open_now_button)
 
     elif world_name == 'Earth':
-        location_2stack_coin = pyautogui.locateOnScreen('Earth/earth_2stack_coin.png')
-        location_4stack_coin = pyautogui.locateOnScreen('Earth/earth_4stack_coin.png')
-        location_6stack_coin = pyautogui.locateOnScreen('Earth/earth_6stack_coin.png')
-        location_chest = pyautogui.locateOnScreen('Earth/earth_bag.png')
-        #location_close_button = pyautogui.locateOnScreen('Earth/Earth_close_button.png')
-        location_equip_button = pyautogui.locateOnScreen('Earth/earth_equip_button.png')
-        location_fortune_box = pyautogui.locateOnScreen('Earth/earth_fortune_box.png')
-        location_grab_button = pyautogui.locateOnScreen('Earth/earth_grab_button.png')
-        location_loot_button = pyautogui.locateOnScreen('Earth/earth_loot_button.png')
-        location_open_now_button = pyautogui.locateOnScreen('Earth/earth_open_now_button.png')
+        location_2stack_coin = pyautogui.locateOnScreen('Earth/earth_2stack_coin.png',confidence=0.2)
+        location_4stack_coin = pyautogui.locateOnScreen('Earth/earth_4stack_coin.png',confidence=0.2)
+        location_6stack_coin = pyautogui.locateOnScreen('Earth/earth_6stack_coin.png',confidence=0.2)
+        location_chest = pyautogui.locateOnScreen('Earth/earth_bag.png',confidence=0.2)
+        #location_close_button = pyautogui.locateOnScreen('Earth/Earth_close_button.png',confidence=0.2)
+        location_equip_button = pyautogui.locateOnScreen('Earth/earth_equip_button.png',confidence=0.2)
+        location_fortune_box = pyautogui.locateOnScreen('Earth/earth_fortune_box.png',confidence=0.2)
+        location_grab_button = pyautogui.locateOnScreen('Earth/earth_grab_button.png',confidence=0.2)
+        location_loot_button = pyautogui.locateOnScreen('Earth/earth_loot_button.png',confidence=0.2)
+        location_open_now_button = pyautogui.locateOnScreen('Earth/earth_open_now_button.png',confidence=0.2)
 
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
@@ -133,4 +133,4 @@ while True:
     world_name = world()
     collector(world_name)
     clicker()
-#mars_upgrades()
+    #mars_upgrades()
