@@ -5,7 +5,7 @@ import time
 
 def clicker():
     time.sleep(2)
-    while True:
+    for i in range(20):
         pyautogui.leftClick(x = 385, y = 503)
 
 def world():
@@ -27,17 +27,17 @@ def world():
 
 def collector(world_name):
     if world_name == 'Mars':
-        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png')
-        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png')
-        location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png')
-        location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png')
-        location_close_button = pyautogui.locateOnScreen('Mars/mars_close_button.png')
-        location_equip_button = pyautogui.locateOnScreen('Mars/mars_equip_button.png')
-        location_fortune_box = pyautogui.locateOnScreen('Mars/mars_fortune_box.png')
-        location_grab_button = pyautogui.locateOnScreen('Mars/mars_grab_button.png')
-        location_loot_button = pyautogui.locateOnScreen('Mars/mars_loot_button.png')
-        location_open_now_button = pyautogui.locateOnScreen('Mars/mars_open_now_button.png')
-
+        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png',confidence=0.8)
+        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png',confidence=0.8)
+        location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png',confidence=0.8)
+        location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png',confidence=0.8)
+        location_close_button = pyautogui.locateOnScreen('Mars/mars_close_button.png',confidence=0.8)
+        location_equip_button = pyautogui.locateOnScreen('Mars/mars_equip_button.png',confidence=0.8)
+        location_fortune_box = pyautogui.locateOnScreen('Mars/mars_fortune_box.png',confidence=0.8)
+        location_grab_button = pyautogui.locateOnScreen('Mars/mars_grab_button.png',confidence=0.8)
+        location_loot_button = pyautogui.locateOnScreen('Mars/mars_loot_button.png',confidence=0.8)
+        location_open_now_button = pyautogui.locateOnScreen('Mars/mars_open_now_button.png',confidence=0.8)
+        print(location_2stack_coin)
         if location_2stack_coin is not None:
             pyautogui.click(location_2stack_coin)
         if location_4stack_coin is not None:
@@ -129,7 +129,8 @@ def collector(world_name):
     #if pyautogui.pixelMatchesColor(212,199,199):
         #pyautogui.leftClick(847,631 or 804,483 or 805,327 or 1044,338 or 1030,479)
 
-world_name = world()
-collector(world_name)
-clicker()
+while True:
+    world_name = world()
+    collector(world_name)
+    clicker()
 #mars_upgrades()
