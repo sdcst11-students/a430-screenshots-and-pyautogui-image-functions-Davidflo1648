@@ -4,6 +4,7 @@ import time
 
 
 def clicker():
+    pyautogui.screenshot(region=pyautogui.position() + (16, 16))
     while True:
         pyautogui.leftClick(x = 385, y = 503)
 
