@@ -9,16 +9,16 @@ def clicker():
         pyautogui.leftClick(x = 385, y = 503)
 
 def world():
-    x = 186
-    y = 403
+    x = 465
+    y = 552
     color = pyautogui.pixel(x, y)
     print(color)
     world_name = None
-    if pyautogui.pixelMatchesColor(x, y, (85,18,11), tolerance=10):
+    if pyautogui.pixelMatchesColor(x, y, (99,32,24), tolerance=10):
         world_name = 'Mars'
-    elif pyautogui.pixelMatchesColor(x, y, (217,229,235), tolerance=10):
+    elif pyautogui.pixelMatchesColor(x, y, (218,231,239), tolerance=10):
         world_name = 'Moon'
-    elif pyautogui.pixelMatchesColor(x, y, (235,221,175), tolerance=10):
+    elif pyautogui.pixelMatchesColor(x, y, (242,225,174), tolerance=10):
         world_name = 'Earth'
     
     return world_name
