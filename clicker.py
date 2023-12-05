@@ -11,17 +11,14 @@ def clicker():
 def world():
     x = 186
     y = 403
-
-    color = pyautogui.pixel(x,y)
+    color = pyautogui.pixel(x, y)
     print(color)
-
     world_name = None
-
-    if color == (85,18,11):
+    if pyautogui.pixelMatchesColor(x, y, (85,18,11), tolerance=10):
         world_name = 'Mars'
-    elif color == (217,229,235):
+    elif pyautogui.pixelMatchesColor(x, y, (217,229,235), tolerance=10):
         world_name = 'Moon'
-    elif color == (235,221,175):
+    elif pyautogui.pixelMatchesColor(x, y, (235,221,175), tolerance=10):
         world_name = 'Earth'
     
     return world_name
@@ -132,7 +129,7 @@ def collector(world_name):
 
 
 
-pyautogui.alert("Start")
+pyautogui.alert("Start?")
 while True:
     world_name = world()
     print(world_name)
