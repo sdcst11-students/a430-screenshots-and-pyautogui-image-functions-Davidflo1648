@@ -11,8 +11,8 @@ def clicker():
 def world():
     x = 465
     y = 552
-    color = pyautogui.pixel(x, y)
-    print(color)
+    #color = pyautogui.pixel(x, y)
+    #print(color)
     world_name = None
     if pyautogui.pixelMatchesColor(x, y, (99,32,24), tolerance=10):
         world_name = 'Mars'
@@ -23,10 +23,18 @@ def world():
 
     return world_name
 
+def findImage(filename):
+    try:
+        imageLoc = pyautogui.locateOnScreen(filename,confidence=0.8)
+        return imageLoc
+    except:
+        print(f"{filename} not found")
+        return None
+
 def collector(world_name):
     if world_name == 'Mars':
-        location_2stack_coin = pyautogui.locateOnScreen('Mars/mars_2stack_coin.png',confidence=0.8)
-        location_4stack_coin = pyautogui.locateOnScreen('Mars/mars_4stack_coin.png',confidence=0.8)
+        location_2stack_coin = findImage('Mars/mars_2stack_coin.png')
+        location_4stack_coin = findImage('Mars/mars_4stack_coin.png')
         location_6stack_coin = pyautogui.locateOnScreen('Mars/mars_6stack_coin.png',confidence=0.8)
         location_chest = pyautogui.locateOnScreen('Mars/mars_chest.png',confidence=0.8)
         location_close_button = pyautogui.locateOnScreen('Mars/mars_close_button.png',confidence=0.8)
