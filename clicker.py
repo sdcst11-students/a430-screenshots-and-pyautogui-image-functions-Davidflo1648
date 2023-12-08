@@ -68,7 +68,8 @@ def mars_upgrades():
 pyautogui.alert("Start?")
 while True:
     clicker()
-    mars_upgrades()
     world_name = world()
     print(world_name)
     collector(world_name)
+    if world_name == 'Mars':
+        mars_upgrades()
