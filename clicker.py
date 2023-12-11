@@ -52,15 +52,39 @@ def collector(world_name):
                 pyautogui.leftClick(tImg)
 
 def mars_upgrades():
-    if pyautogui.pixelMatchesColor(1030, 479, (212,199,199), tolerance=10):
+    if pyautogui.pixelMatchesColor(1030, 479, (135,21,101), tolerance=10):
         pyautogui.leftClick(1030,479)
-    elif pyautogui.pixelMatchesColor(847,631, (212,199,199), tolerance=10):
+    elif pyautogui.pixelMatchesColor(847,631, (135,21,101), tolerance=10):
         pyautogui.leftClick(847,631)
-    elif pyautogui.pixelMatchesColor(804,483, (212,199,199), tolerance=10):
+    elif pyautogui.pixelMatchesColor(804,483, (135,21,101), tolerance=10):
         pyautogui.leftClick(804,483)
-    elif pyautogui.pixelMatchesColor(805,327, (212,199,199), tolerance=10):
+    elif pyautogui.pixelMatchesColor(805,327, (135,21,101), tolerance=10):
         pyautogui.leftClick(805,327)
-    elif pyautogui.pixelMatchesColor(1044,388, (212,199,199), tolerance=10):
+    elif pyautogui.pixelMatchesColor(1044,388, (135,21,101), tolerance=10):
+        pyautogui.leftClick(1044,388)
+
+def moon_upgrades():
+    if pyautogui.pixelMatchesColor(1030, 479, (180,222,244), tolerance=10):
+        pyautogui.leftClick(1030,479)
+    elif pyautogui.pixelMatchesColor(847,631, (180,222,244), tolerance=10):
+        pyautogui.leftClick(847,631)
+    elif pyautogui.pixelMatchesColor(804,483, (180,222,244), tolerance=10):
+        pyautogui.leftClick(804,483)
+    elif pyautogui.pixelMatchesColor(805,327, (180,222,244), tolerance=10):
+        pyautogui.leftClick(805,327)
+    elif pyautogui.pixelMatchesColor(1044,388, (180,222,244), tolerance=10):
+        pyautogui.leftClick(1044,388)
+
+def earth_upgrades():
+    if pyautogui.pixelMatchesColor(1044,496, (255,212,69), tolerance=10):
+        pyautogui.leftClick(1030,479)
+    elif pyautogui.pixelMatchesColor(847,631, (255,212,69), tolerance=10):
+        pyautogui.leftClick(847,631)
+    elif pyautogui.pixelMatchesColor(804,483, (255,212,69), tolerance=10):
+        pyautogui.leftClick(804,483)
+    elif pyautogui.pixelMatchesColor(805,327, (255,212,69), tolerance=10):
+        pyautogui.leftClick(805,327)
+    elif pyautogui.pixelMatchesColor(1044,388, (255,212,69), tolerance=10):
         pyautogui.leftClick(1044,388)
 
 
@@ -73,3 +97,7 @@ while True:
     collector(world_name)
     if world_name == 'Mars':
         mars_upgrades()
+    elif world_name == 'Moon':
+        moon_upgrades()
+    elif world_name == 'Earth':
+        earth_upgrades()
